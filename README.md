@@ -1,42 +1,4 @@
 🚗 Car Insurance Purchase Prediction
 This project predicts whether a customer will purchase car insurance using machine learning models—Logistic Regression and XGBoost—deployed via a Streamlit web app.
-
-🔗 Live App: Click here
-
-📌 Overview
-Built with Python, Streamlit, scikit-learn, and XGBoost.
-
-Models trained on customer demographic and behavioral data.
-
-Predicts purchase probability and shows results interactively.
-
-🚀 Features
-Upload CSV to predict in bulk.
-
-View results from both models.
-
-Easy-to-use Streamlit interface.
-
-🛠 Tech Stack
-Python 3.13
-
-Jupyter Notebook & PyCharm
-
-Streamlit for UI
-
-scikit-learn, XGBoost, pandas
-
-📂 Files
-app.py – Streamlit app
-
-model_training.ipynb – Training & evaluation
-
-models/ – Saved model files
-
-data/ – train/test CSVs
-
-🧠 Models
-Logistic Regression – Simple, fast, interpretable.
-
-XGBoost – Boosted trees, better performance.
-
+This project, Car Insurance Purchase Prediction, is a machine learning web application that predicts whether a customer is likely to purchase car insurance based on their demographic and behavioral data. It uses two classification models—Logistic Regression and XGBoost (Boosted Decision Tree)—trained on a dataset containing features like age, gender, vehicle damage, annual premium, and more. The web interface is built using Streamlit, allowing users to upload a .csv file and receive predictions instantly from both models. The project is implemented using Python 3.13, with tools such as Jupyter Notebook, PyCharm, pandas, scikit-learn, and xgboost. The trained models are saved using joblib and integrated into the app for fast inference. This project is designed for educational and research purposes and is available to try via the live Streamlit app.
+Try it out: https://car-insurance-prediction-nikhilesh.streamlit.app/
