@@ -1,128 +1,42 @@
 🚗 Car Insurance Purchase Prediction
-This project is a web-based machine learning application that predicts whether a customer is likely to purchase car insurance based on various demographic and behavioral features. It is built using Python, Streamlit, and machine learning models like Logistic Regression and XGBoost (Boosted Decision Tree).
+This project predicts whether a customer will purchase car insurance using machine learning models—Logistic Regression and XGBoost—deployed via a Streamlit web app.
 
-🔗 Try it out: https://car-insurance-prediction-nikhilesh.streamlit.app/
+🔗 Live App: Click here
 
-📌 Table of Contents
-Overview
+📌 Overview
+Built with Python, Streamlit, scikit-learn, and XGBoost.
 
-Features
+Models trained on customer demographic and behavioral data.
 
-Tech Stack
+Predicts purchase probability and shows results interactively.
 
-Installation
+🚀 Features
+Upload CSV to predict in bulk.
 
-Usage
+View results from both models.
 
-Project Structure
+Easy-to-use Streamlit interface.
 
-Model Details
+🛠 Tech Stack
+Python 3.13
 
-Screenshots
+Jupyter Notebook & PyCharm
 
-License
+Streamlit for UI
 
-📖 Overview
-This project, titled "A Study on Car Insurance Purchase Prediction using Two-Class Logistic Regression and Two-Class Boosted Decision Tree", aims to:
+scikit-learn, XGBoost, pandas
 
-Analyze customer data and predict the likelihood of car insurance purchase.
+📂 Files
+app.py – Streamlit app
 
-Build an interactive Streamlit web app for real-time predictions.
+model_training.ipynb – Training & evaluation
 
-Provide insights into customer segmentation and model evaluation metrics.
+models/ – Saved model files
 
-✅ Features
-Upload test data as .csv for batch prediction.
+data/ – train/test CSVs
 
-Visual comparison of predictions from Logistic Regression and XGBoost.
+🧠 Models
+Logistic Regression – Simple, fast, interpretable.
 
-User-friendly UI built with Streamlit.
+XGBoost – Boosted trees, better performance.
 
-Trained models and pipeline saved using joblib for fast inference.
-
-🧰 Tech Stack
-Language: Python 3.13+
-
-IDE: Jupyter Notebook, PyCharm
-
-Web App: Streamlit
-
-ML Libraries: scikit-learn, XGBoost, pandas, numpy, seaborn, matplotlib
-
-Model Deployment: Streamlit Cloud
-
-💻 Installation
-Clone the repository:
-
-bash
-Copy
-Edit
-git clone https://github.com/yourusername/car-insurance-prediction.git
-cd car-insurance-prediction
-Create virtual environment (optional but recommended):
-
-bash
-Copy
-Edit
-python -m venv venv
-source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-Install dependencies:
-
-bash
-Copy
-Edit
-pip install -r requirements.txt
-Run locally:
-
-bash
-Copy
-Edit
-streamlit run app.py
-🚀 Usage
-Upload a CSV file (test.csv) in the required format.
-
-View predictions from both models.
-
-Analyze graphs and model performance metrics.
-
-Download the results (if implemented).
-
-🗂️ Project Structure
-bash
-Copy
-Edit
-├── app.py                    # Main Streamlit application
-├── model_training.ipynb      # Jupyter Notebook for training and evaluation
-├── models/
-│   ├── logistic_model.pkl
-│   └── xgboost_model.pkl
-├── data/
-│   ├── train.csv
-│   ├── test.csv
-│   └── sample_submission.csv
-├── requirements.txt
-└── README.md
-🧠 Model Details
-1. Logistic Regression
-Simple, interpretable, and works well with linear decision boundaries.
-
-Evaluated using accuracy, precision, recall, and confusion matrix.
-
-2. XGBoost (Boosted Decision Tree)
-More complex, ensemble-based model.
-
-Handles non-linearity and interactions better.
-
-Typically yields higher accuracy.
-
-Both models are trained on a dataset with features such as:
-
-Age, Gender, Region_Code
-
-Driving License, Previously Insured
-
-Vehicle Age & Damage
-
-Annual Premium, Policy Sales Channel
-
-Vintage
